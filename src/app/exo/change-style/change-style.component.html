@@ -1,0 +1,11 @@
+<div class="flex flex-wrap">
+  <div *ngFor="let color of colors">
+    <p
+      class="inline-block p-3 m-3 text-3xl font-black border-lime-200 border"
+      [ngStyle]="{ color: 'white', backgroundColor: color }"
+    >
+      {{ color }}
+    </p>
+  </div>
+</div>
+<p class="text-5xl">{{ colors.length }} couleurs</p>

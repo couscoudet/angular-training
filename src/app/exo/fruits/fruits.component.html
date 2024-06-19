@@ -1,0 +1,10 @@
+<ul
+  class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400"
+>
+  <li *ngFor="let fruit of fruits" class="m-7">
+    <span *ngIf="fruit !== 'orange'; else bold">{{ fruit }}</span>
+    <ng-template #bold
+      ><b>{{ fruit }}</b></ng-template
+    >
+  </li>
+</ul>

@@ -10,6 +10,10 @@ import { HooksComponent } from './test/hooks/hooks.component';
 import { FormsModule } from '@angular/forms';
 import { ForLoopComponent } from './exo/for-loop/for-loop.component';
 import { SwitchcaseComponent } from './exo/switchcase/switchcase.component';
+import { FruitsComponent } from './exo/fruits/fruits.component';
+import { ChangeClassComponent } from './exo/change-class/change-class.component';
+import { ChangeStyleComponent } from './exo/change-style/change-style.component';
+import { PremiereDirectiveDirective } from './premiere-directive.directive';
 
 @NgModule({
   declarations: [
@@ -21,6 +25,10 @@ import { SwitchcaseComponent } from './exo/switchcase/switchcase.component';
     HooksComponent,
     ForLoopComponent,
     SwitchcaseComponent,
+    FruitsComponent,
+    ChangeClassComponent,
+    ChangeStyleComponent,
+    PremiereDirectiveDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
