@@ -1,0 +1,22 @@
+<div class="flex justify-evenly flex-wrap m-2">
+  <div
+    *ngFor="let user of users"
+    class="max-w-sm rounded overflow-hidden shadow-lg bg-blue-100 text-blue-800 text-xs font-medium me-7 px-2.5 py-0.5"
+  >
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2" id="user-name">
+        {{ user.prenom }} {{ user.nom }}
+      </div>
+      <p class="text-gray-700 text-base" id="user-age">{{ user.age }}</p>
+      <p class="text-gray-700 text-base" id="user-email">
+        Email: {{ user.email }}
+      </p>
+      <img
+        class="w-20 h-20 rounded-full object-cover"
+        src="{{ user.avatar }}"
+        alt="Rounded avatar"
+      />
+      <app-switchcase [gender]="user.gender"></app-switchcase>
+    </div>
+  </div>
+</div>

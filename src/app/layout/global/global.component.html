@@ -1,0 +1,14 @@
+<div class="grid grid-cols-12 grid-rows-12 gap-4 h-screen container-flex">
+  <header class="bg-orange-700 col-span-12">
+    <app-header></app-header>
+  </header>
+  <div
+    class="bg-orange-500 col-span-12 row-span-9 overflow-scroll overscroll-contain"
+  >
+    <app-main></app-main>
+  </div>
+  <footer class="bg-orange-900 col-span-12 row-span-2 sticky">
+    <app-footer></app-footer>
+  </footer>
+  <app-hooks [myNumber]="3"></app-hooks>
+</div>
